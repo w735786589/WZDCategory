@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - WZDCategory (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - WZDCategory (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  WZDCategory:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  WZDCategory: efd5d5ec55b8a1b8a90813668dc4e5de3fdc9917
+
+PODFILE CHECKSUM: f1cd0122db67a683266f10d4f4e5ac40283c6042
+
+COCOAPODS: 1.11.3
