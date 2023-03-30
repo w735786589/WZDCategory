@@ -72,6 +72,9 @@ static const void *phonePropertyKey = &phonePropertyKey;
             return [self qd_formatPhoneWithRange:range replacementString:string];
         }
             break;
+        case UITextFieldViewStyleIdCard:{
+            return [self isValidIdCard:range replacementString:string limit:18];
+        }
         default:
             break;
     }
@@ -258,6 +261,36 @@ static const void *phonePropertyKey = &phonePropertyKey;
     
     
     
+}
+- (BOOL)isValidIdCard:(NSRange)range replacementString:(NSString *)string limit:(NSUInteger)limit {
+    NSString *text = self.text;
+    if (!text) {
+        return NO;
+    }
+    ///拼接了参数string的afterStr
+    NSString *afterStr = [text stringByReplacingCharactersInRange:range withString:string];
+    ///限制长度
+    if (afterStr.length > limit) {
+        self.text = [afterStr substringToIndex:limit];
+        return NO;
+    }
+    if(afterStr.length<18){
+        NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"].invertedSet;
+        NSString *filteredStr = [[string componentsSeparatedByCharactersInSet:set] componentsJoinedByString:@""];
+        if ([string isEqualToString:filteredStr]) {
+            return YES;
+        } else {
+            return NO;
+        }
+    }else{
+        NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"0123456789xX"].invertedSet;
+        NSString *filteredStr = [[string componentsSeparatedByCharactersInSet:set] componentsJoinedByString:@""];
+        if ([string isEqualToString:filteredStr]) {
+            return YES;
+        } else {
+            return NO;
+        }
+    }
 }
 
 - (void)qd_setTextRangeWithOffset:(NSUInteger)offset {

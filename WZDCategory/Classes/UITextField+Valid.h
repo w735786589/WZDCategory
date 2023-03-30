@@ -14,7 +14,8 @@ typedef NS_ENUM(NSInteger, UITextFieldViewStyle) {
     UITextFieldViewStyleText,
     UITextFieldViewStyleNumber,
     UITextFieldViewStyleDecimalNumber,
-    UITextFieldViewStylePhone
+    UITextFieldViewStylePhone,
+    UITextFieldViewStyleIdCard
 };
 
 @interface UITextField (Valid)<UITextFieldDelegate>
@@ -22,7 +23,7 @@ typedef NS_ENUM(NSInteger, UITextFieldViewStyle) {
 @property (assign,nonatomic)NSUInteger limit,number;
 @property (strong,nonatomic)NSString *phone;
 - (void)loadStyle:(UITextFieldViewStyle)style decimalNumber:(NSInteger)number limit:(NSUInteger)limit;
-
+//
 ///// 设置输入框只能输入数字和小数点，且可以设置小数点后面几位，该函数在-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string调用；
 ///// @param range range
 ///// @param string string
