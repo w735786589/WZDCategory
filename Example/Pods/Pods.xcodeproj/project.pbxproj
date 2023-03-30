@@ -1084,37 +1084,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		048E5BE1E24990E03879FBFB98278C82 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D17619BC8C2BA1B75E7400085A6A4D83 /* WZDCategory.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WZDCategory/WZDCategory-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZDCategory/WZDCategory-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WZDCategory/WZDCategory.modulemap";
-				PRODUCT_MODULE_NAME = WZDCategory;
-				PRODUCT_NAME = WZDCategory;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		0CF977E736A9F0297ED689DCD07C3E1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9E78467D8DC9E9BBA092D264AD7F7AE /* FBSnapshotTestCase.release.xcconfig */;
@@ -1145,6 +1114,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		23F0565AB3A18AF20331E10FE57E04A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17619BC8C2BA1B75E7400085A6A4D83 /* WZDCategory.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WZDCategory/WZDCategory-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WZDCategory/WZDCategory-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WZDCategory/WZDCategory.modulemap";
+				PRODUCT_MODULE_NAME = WZDCategory;
+				PRODUCT_NAME = WZDCategory;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		2705B82FAD3E374C3BF6B225CAFAFDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1240,38 +1240,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		32F59430BB003FFFF9AC1F9E9A785AB7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3276D9F2E9A686225B07B44AC664688E /* WZDCategory.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WZDCategory/WZDCategory-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZDCategory/WZDCategory-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WZDCategory/WZDCategory.modulemap";
-				PRODUCT_MODULE_NAME = WZDCategory;
-				PRODUCT_NAME = WZDCategory;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		557F4CDC6F437CA242A3910D83AF3C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1492,6 +1460,38 @@
 			};
 			name = Debug;
 		};
+		D0A621AF59DFC4492E6594612F119D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3276D9F2E9A686225B07B44AC664688E /* WZDCategory.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WZDCategory/WZDCategory-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WZDCategory/WZDCategory-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WZDCategory/WZDCategory.modulemap";
+				PRODUCT_MODULE_NAME = WZDCategory;
+				PRODUCT_NAME = WZDCategory;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D1406F3F681B705F9FE0572010343A2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5BA9C329C6B62B1BD9E0EA5C14BCADC /* Pods-WZDCategory_Tests.release.xcconfig */;
@@ -1625,8 +1625,8 @@
 		8616B0EC9B336AE59DA523FD171A5206 /* Build configuration list for PBXNativeTarget "WZDCategory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				048E5BE1E24990E03879FBFB98278C82 /* Debug */,
-				32F59430BB003FFFF9AC1F9E9A785AB7 /* Release */,
+				23F0565AB3A18AF20331E10FE57E04A7 /* Debug */,
+				D0A621AF59DFC4492E6594612F119D79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

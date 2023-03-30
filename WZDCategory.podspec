@@ -17,11 +17,10 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'w735786589' => 'w735786589@163.com' }
     s.source           = { :git => 'https://github.com/w735786589/WZDCategory.git', :tag => s.version.to_s }
-    s.ios.deployment_target = '10.0'
+    s.ios.deployment_target = '11.0'
     s.platform       = :ios
     s.platform       = :ios, "11.0"
-    s.exclude_files  = "Classes/Exclude"
-    s.resource       = 'WZDCategory/MBProgressHUD.bundle'
+    s.resources       = 'WZDCategory/MBProgressHUD.bundle'
     s.dependency "Masonry"
     s.dependency "MBProgressHUD"
     s.source_files = 'WZDCategory/Classes/**/*'

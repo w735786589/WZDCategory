@@ -6,7 +6,7 @@ PODS:
     - FBSnapshotTestCase/Core
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
-  - WZDCategory (0.1.8):
+  - WZDCategory (1.0):
     - Masonry
     - MBProgressHUD
 
@@ -28,7 +28,7 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  WZDCategory: 77e7f0eaee5f5bbfed083c5598d92c349dc46089
+  WZDCategory: d4fa1161ed789abaf12e40b4f0872c6083ce3e88
 
 PODFILE CHECKSUM: f1cd0122db67a683266f10d4f4e5ac40283c6042
 
