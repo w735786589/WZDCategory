@@ -11,21 +11,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSString (Exp)
+@interface NSString (Expansion)
 
 /**
  * 获取APP版本号
  *
  * @return 返回版本号
  */
-+ (NSString *)qd_appVersion;
++ (NSString *)appVersion;
 
 /**
  * 获取APP名称
  *
  * @return 返回APP名称
  */
-+ (NSString *)qd_appName;
++ (NSString *)appName;
 
 #pragma mark - 基础判断
 
@@ -34,44 +34,44 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 将 nil 的字符串转 @""
  */
-- (NSString *)qd_emptyStringByWhitespace;
+- (NSString *)emptyStringByWhitespace;
 
 /**
  * 判断是否是字符串
  *
  * @return YES or NO
  */
-- (BOOL)qd_isString;
+- (BOOL)isString;
 
 /**
  * 判断是否是空字符串
  *
  * @return YES or NO
  */
-- (BOOL)qd_isEmptyString;
+- (BOOL)isEmptyString;
 
 /**
  * 去掉空格
  *
  * @return 去除空格后的字符串
  */
-- (NSString *)qd_removeSpaces;
+- (NSString *)removeSpaces;
 
--(NSString *)qd_stringRemoveBlank;
+- (NSString *)stringRemoveBlank;
 
 /**
  *  字符串转UTF-8
  *
  *  @return UTF-8 后的字符串
  */
-- (NSString *)qd_getUTF8;
+- (NSString *)getUTF8;
 
 /**
  * 字符串转data
  *
  * @return data
  */
-- (NSData *)qd_stringTurnData;
+- (NSData *)stringTurnData;
 
 #pragma mark - 字符串加密解密
 
@@ -80,14 +80,14 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return 加密后的base64字符串
  */
-- (NSString *)qd_base64Encrypt;
+- (NSString *)base64Encrypt;
 
 /**
  * base64解密
  *
  * @return 解密后的字符串
  */
-- (NSString *)qd_base64Decrypt;
+- (NSString *)base64Decrypt;
 
 /**
  * AES加密
@@ -95,7 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param key 加密的key
  * @return 加密后的字符串
  */
-- (NSString *)qd_aesEncrypyForKey:(NSString *)key;
+- (NSString *)aesEncrypyForKey:(NSString *)key;
 
 /**
  * AES解密
@@ -103,14 +103,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param key 加密的key
  * @return 解密后的字符串
  */
-- (NSString *)qd_aesDecrypyForKey:(NSString *)key;
+- (NSString *)aesDecrypyForKey:(NSString *)key;
 
 /**
  * MD5加密
  *
  * @return MD5加密之后的字符串
  */
-- (NSString *)qd_stringMD5;
+- (NSString *)stringMD5;
 
 /**
  md5加密区分32、16位与大小写
@@ -119,7 +119,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param isLowercaseStr YES即小写，NO即大写
  @return md5加密后的字符串
  */
-- (NSString *)qd_bateNum:(NSInteger)bateNum isLowercaseStr:(BOOL)isLowercaseStr;
+- (NSString *)bateNum:(NSInteger)bateNum isLowercaseStr:(BOOL)isLowercaseStr;
 
 
 #pragma mark - 常用正则表达式判断
@@ -129,42 +129,42 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return YES or NO
  */
--(BOOL)qd_isValidateEmail;
+-(BOOL)isValidateEmail;
 
 /**
  * 判断是否是标准的URL
  *
  * @return YES or NO
  */
-- (BOOL)qd_isValidateURL;
+- (BOOL)isValidateURL;
 
 /**
  * 判断是否是标准的电话号码（注：该方法只支持中国大陆地区标准电话号码）
  *
  * @return YES or NO
  */
-- (BOOL)qd_isValidatePhone;
+- (BOOL)isValidatePhone;
 
 /**
  * 判断是否是标准的身份证号 (注：该方法只支持中国大陆地区身份证号）
  *
  * @return YES or NO
  */
-- (BOOL)qd_isValidateIdentityCard;
+- (BOOL)isValidateIdentityCard;
 
 /**
  * 判断是否是标准的车牌号 (注：该方法只支持中国大陆地区车牌号）
  *
  * @return YES or NO
  */
-- (BOOL)qd_isValidateCarNo;
+- (BOOL)isValidateCarNo;
 
 ///**
 // * 判断输入的密码是否符合规则（默认为6~20位字母加数字组合）
 // *
 // * @return YES or NO
 // */
-//- (BOOL)qd_isValidatePassword;
+- (BOOL)isValidatePassword;
 
 #pragma mark - 字符串和时间之间的转化
 
@@ -173,41 +173,41 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return 返回获取系统时间（格式为：yyyy-MM-dd HH:mm:ss）
  */
-+ (NSString *)qd_getSystemDate;
++ (NSString *)getSystemDate;
 
 /**
 * 获取系统时间
 *
 * @return 返回获取系统时间（格式为：yyyy-MM-dd）
 */
-+ (NSString *)qd_getSystemDateWithYMD;
++ (NSString *)getSystemDateWithYMD;
 
 /**
  * 时间字符串转xx前（注：时间格式必须为“yyyy-MM-dd HH:mm:ss”）
  *
  * @return xx前
  */
-- (NSString *)qd_dateString;
+- (NSString *)dateString;
 
 /**
 * 时间格式转换 时间字符串转xx前（注：时间格式必须为“yyyy-MM-dd HH:mm:ss”）
 *
 * @return 返回时间字符串
 */
-- (NSString *)qd_changeTimeFormatter:(NSString *)formatter;
+- (NSString *)changeTimeFormatter:(NSString *)formatter;
 /**
  * 时间戳转时间
  *
  * @return 返回时间（默认时间格式：yyyy-MM-dd HH:mm:ss）
  */
-- (NSString *)qd_timeWithTimestamp;
+- (NSString *)timeWithTimestamp;
 
 /**
  * 时间戳转时间
  *
  * @return 返回设置的时间格式
  */
-- (NSString *)qd_timeWithTimestampWithFormatter:(NSString *)dateFormatter;
+- (NSString *)timeWithTimestampWithFormatter:(NSString *)dateFormatter;
 
 /**
  时间格式转换 (调用格式为：yyyy-MM-dd HH:mm:ss)
@@ -215,15 +215,15 @@ NS_ASSUME_NONNULL_BEGIN
  * @param formart 需要显示的格式
  * @return 返回设置的时间格式
  */
-- (NSString *)qd_dateFormart:(NSString *)formart;
-+ (NSString *)qd_getSystemDateWithFormatter:(NSString *)formatter;
-- (NSDate *)qd_getDateWithFormatter:(NSString *)formatter;
+- (NSString *)dateFormart:(NSString *)formart;
++ (NSString *)getSystemDateWithFormatter:(NSString *)formatter;
+- (NSDate *)getDateWithFormatter:(NSString *)formatter;
 /**
  * 计算星座 (调用格式为：yyyy-MM-dd HH:mm:ss)
  *
  * @return 星座
  */
-- (NSString *)qd_getConstellation;
+- (NSString *)getConstellation;
 
 #pragma mark - 数据转换
 
@@ -233,29 +233,29 @@ NS_ASSUME_NONNULL_BEGIN
  * @param object 需要转换的对象
  * @return 返回JSON
  */
-+ (NSString *)qd_convertToJsonData:(id)object;
-+ (NSDictionary *)qd_dictionaryWithJsonString:(NSString *)jsonString ;
++ (NSString *)convertToJsonData:(id)object;
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString ;
 
 /**
  * 数字转汉语数字
  *
  * @return 汉语数字
  */
-- (NSString *)qd_digitalToChineseDigital;
+- (NSString *)digitalToChineseDigital;
 
 /**
  * 单位米转千米
  *
  @return 返回“xxm”,“xxkm”
  */
-- (NSString *)qd_meterToKm;
+- (NSString *)meterToKm;
 
 /**
  * 若商品金额大于一万则转化为万元
  *
  * @return 返回“xx万”
  */
-- (NSString *)qd_yuanToMillionYuan;
+- (NSString *)yuanToMillionYuan;
 
 #pragma mark - 计算字符串宽高
 
@@ -266,7 +266,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param attributes 富文本属性
  * @return 返回字符串宽高
  */
-- (CGSize)qd_getSize:(CGSize)size attributes:(nullable NSDictionary<NSAttributedStringKey, id> *)attributes;
+- (CGSize)getSize:(CGSize)size attributes:(nullable NSDictionary<NSAttributedStringKey, id> *)attributes;
 
 /**
  * 计算字符串宽高
@@ -275,7 +275,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param font 字体
  * @return 返回字符串宽高
  */
-- (CGSize)qd_getSize:(CGSize)size font:(UIFont *)font;
+- (CGSize)getSize:(CGSize)size font:(UIFont *)font;
 
 /**
  * 计算字符的宽
@@ -284,7 +284,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param font 字体
  * @return 返回字符串宽
  */
-- (CGFloat)qd_getWidthToMaxHeight:(CGFloat)maxHeight font:(UIFont *)font;
+- (CGFloat)getWidthToMaxHeight:(CGFloat)maxHeight font:(UIFont *)font;
 
 /**
  * 计算字符的高
@@ -293,7 +293,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param font 字体
  * @return 返回字符串高
  */
-- (CGFloat)qd_getHeightToMaxWidth:(CGFloat)maxWidth font:(UIFont *)font;
+- (CGFloat)getHeightToMaxWidth:(CGFloat)maxWidth font:(UIFont *)font;
 
 #pragma mark - 获取沙盒路径
 
@@ -302,21 +302,21 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return 路径
  */
-+ (NSString *)qd_getApplicationTmpPath;
++ (NSString *)getApplicationTmpPath;
 
 /*
  * 获取Documents路径
  *
  * @return 路径
  */
-+ (NSString *)qd_getApplicationDocumentPath;
++ (NSString *)getApplicationDocumentPath;
 
 /*
  * 获取沙盒 Cache
  *
  * @return 路径
  */
-+ (NSString *)qd_getApplicationCachePath;
++ (NSString *)getApplicationCachePath;
 
 #pragma mark - 其他
 
@@ -325,73 +325,62 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return 替换后的手机号
  */
-- (NSString *)qd_replacingPhone;
-
-- (NSString *)qd_replacingBankCard;
+- (NSString *)replacingPhone;
 
 /**
  * 段前空两格
  *
  * @return 字符串
  */
-- (NSString *)qd_emptyBeforeParagraph;
+- (NSString *)emptyBeforeParagraph;
 
 /**
  *  拨打电话
  */
-- (BOOL)qd_callPhone;
+- (BOOL)callPhone;
 
 /**
 * 行间距设置
 *
 @return NSAttributedString
 */
-- (NSAttributedString *)qd_getAttributedStringWithLineSpace:(CGFloat)lineSpace;
+- (NSAttributedString *)getAttributedStringWithLineSpace:(CGFloat)lineSpace;
 
 /**
 * 行数
 *
 @return NSInteger
 */
-- (NSInteger)qd_getLabelStringRowCountWithWidth:(CGFloat)width font:(UIFont *)font;
+- (NSInteger)getLabelStringRowCountWithWidth:(CGFloat)width font:(UIFont *)font;
 
-/**
-* 图片地址
-*
-@return NSString
-*/
-+ (NSString *)qd_stringWithImagePath:(NSString *)path;
+- (CGSize)singleLineSizeWithAttributeText:(UIFont *)font;
 
+- (CGSize)multiLineSizeWithAttributeText:(CGFloat)width font:(UIFont *)font;
 
+- (CGSize)singleLineSizeWithText:(UIFont *)font;
 
-- (CGSize)qd_singleLineSizeWithAttributeText:(UIFont *)font;
+- (NSString *)md5;
 
-- (CGSize)qd_multiLineSizeWithAttributeText:(CGFloat)width font:(UIFont *)font;
+- (NSURL *)urlScheme:(NSString *)scheme;
 
-- (CGSize)qd_singleLineSizeWithText:(UIFont *)font;
-
-- (NSString *)qd_md5;
-
-- (NSURL *)qd_urlScheme:(NSString *)scheme;
-
-+ (NSString *)qd_formatCount:(NSInteger)count;
++ (NSString *)formatCount:(NSInteger)count;
 
 
-+ (NSString *)qd_currentTime;
++ (NSString *)currentTime;
 /*
  根据时间动态生成文件名称
  */
-+ (NSString *)qd_getFileNameBySystemDate;
++ (NSString *)getFileNameBySystemDate;
 /*
  字符中数字变色
  */
-- (NSMutableAttributedString *)qd_modifyDigitalColor:(UIColor *)color normalColor:(UIColor *)normalColor;
+- (NSMutableAttributedString *)modifyDigitalColor:(UIColor *)color normalColor:(UIColor *)normalColor;
 
 #pragma mark  密码强度判断
-+(NSString*)qd_isValidataPassword:(NSString*)password;
-+ (NSString *)qd_autoImageJS:(NSString *)content webWidth:(float)webWidth;
++(NSString*)isValidataPassword:(NSString*)password;
++ (NSString *)autoImageJS:(NSString *)content webWidth:(float)webWidth;
 #pragma mark  删除HTML标签
-+ (NSString *)qd_deleteHtmlTag:(NSString*)html;
++ (NSString *)deleteHtmlTag:(NSString*)html;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSData (Exp)
+@interface NSData (Expansion)
 
 /**
  * AES256加密
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param key 加密key（注：加密和解密的key必须一样）
  & @return 加密值
  */
-- (NSData *)qd_aes256EncryptWithKey:(NSString *)key;
+- (NSData *)aes256EncryptWithKey:(NSString *)key;
 
 /**
  * AES256解密
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param key 解密key（注：加密和解密的key必须一样）
  & @return 解密值
  */
-- (NSData *)qd_aes256DecryptWithKey:(NSString *)key;
+- (NSData *)aes256DecryptWithKey:(NSString *)key;
 
 @end
 

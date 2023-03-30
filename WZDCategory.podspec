@@ -7,36 +7,21 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'WZDCategory'
-  s.version          = '0.1.8'
-  s.summary          = 'A short description of WZDCategory.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/w735786589/WZDCategory'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'w735786589' => 'w735786589@163.com' }
-  s.source           = { :git => 'https://github.com/w735786589/WZDCategory.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'WZDCategory/Classes/**/*'
+    s.name             = 'WZDCategory'
+    s.version          = '1.0'
+    s.summary          = 'A short description of WZDCategory.'
+    s.description      = <<-DESC
+    TODO: Add long description of the pod here.
+    DESC
+    s.homepage         = 'https://github.com/w735786589/WZDCategory'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'w735786589' => 'w735786589@163.com' }
+    s.source           = { :git => 'https://github.com/w735786589/WZDCategory.git', :tag => s.version.to_s }
+    s.ios.deployment_target = '10.0'
+    s.exclude_files  = "Classes/Exclude"
+    s.resource       = 'WZDCategory/MBProgressHUD.bundle'
+    s.dependency "Masonry"
+    s.dependency "MBProgressHUD"
+    s.source_files = 'WZDCategory/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'WZDCategory' => ['WZDCategory/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

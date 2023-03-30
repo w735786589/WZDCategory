@@ -4,7 +4,11 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - WZDCategory (0.1.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - WZDCategory (0.1.8):
+    - Masonry
+    - MBProgressHUD
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -13,6 +17,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - Masonry
+    - MBProgressHUD
 
 EXTERNAL SOURCES:
   WZDCategory:
@@ -20,8 +26,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  WZDCategory: efd5d5ec55b8a1b8a90813668dc4e5de3fdc9917
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  WZDCategory: 77e7f0eaee5f5bbfed083c5598d92c349dc46089
 
 PODFILE CHECKSUM: f1cd0122db67a683266f10d4f4e5ac40283c6042
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0
