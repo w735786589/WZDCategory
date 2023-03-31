@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
     s.dependency "Masonry","~> 1.1.0"
     s.dependency "MBProgressHUD","~> 1.2.0"
     s.source_files = 'WZDCategory/Classes/**/*'
-#    s.resources       = '/MBProgressHUD.bundle'
+    s.resources       = '/MBProgressHUD.bundle'
 end
