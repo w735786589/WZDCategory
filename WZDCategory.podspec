@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '11.0'
     s.platform       = :ios
     s.platform       = :ios, "11.0"
-    s.resources       = 'WZDCategory/MBProgressHUD.bundle'
+  
     s.dependency "Masonry"
     s.dependency "MBProgressHUD"
     s.source_files = 'WZDCategory/Classes/**/*'
-  
+    s.resources       = '/MBProgressHUD.bundle'
 end
